@@ -1,0 +1,36 @@
+\documentclass[17pt,dvipdfmx]{beamer}
+\ifnum 42146=\euc"A4A2
+  \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+\else
+  \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+\fi
+
+
+\usepackage{graphicx}
+\usepackage{verbatim}
+
+\usetheme{Madrid}
+\usefonttheme{professionalfonts}
+\useinnertheme{circles}
+
+\setbeamertemplate{footline}[page number]
+
+\title{<`1:TITLE`>}
+\author{<`2:AUTHORS`>}
+\institute[<`3:INST`>]{<`4:FULLINST`>}
+\date{<`5:DATE`>}
+
+\begin{document}
+\frame{\titlepage}
+
+\section*{Contents}
+\begin{frame}{Contents}
+    \tableofcontents
+\end{frame}
+
+\section{Motivation}
+\begin{frame}{<`6:FRAMETITLE`>}
+    <`7:TARGET`>
+\end{frame}
+\end{document}
+
